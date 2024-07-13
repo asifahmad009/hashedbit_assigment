@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTZsbnVuM2VmOG52YTZsOW9oM3dpZ3gwYXg1bW1wcmJ3N295bDM3NSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0MYGvwF8tBmSao2k/giphy.webp");
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container {
+    padding: 20px;
+}
+
+.slider {
+    margin-bottom: 40px;
+}
+
+.slider h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product {
+    position: relative;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product img:hover {
+    transform: scale(1.1);
+}
+
+.price, .stock {
+    margin: 5px 0;
+}
+
+.buy-now, .add-to-cart {
+    display: block;
+    width: 100px;
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.buy-now {
+    background-color: #5d8591;
+    color: #fff;
+    transition: box-shadow 0.3s;
+}
+
+.buy-now:hover {
+    box-shadow: 0 0 10px #000000, 0 0 20px #85e9ff, 0 0 30px #d9e9ff;
+}
+
+.add-to-cart {
+    background-color: #333;
+    color: #fff;
+}
+
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#prev-shoes, #prev-watches, #prev-pants {
+    left: 0;
+}
+
+#next-shoes, #next-watches, #next-pants {
+    right: 0;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  
+  .col-50 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  
+  .col-75 {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid rgb(95, 212, 254);
+    border-radius: 3px;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #2c6aa5;
+    border-radius: 3px;
+  }
+  
+  label {
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .icon-container {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  .btn {
+    background-color: #83bdf7;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: #1b4b89;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
